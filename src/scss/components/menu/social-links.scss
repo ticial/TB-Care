@@ -1,0 +1,15 @@
+.social-links {
+	display: flex;
+	gap: 20px;
+}
+
+.social-link {
+	color: $white;
+
+	@include transition_color;
+
+	&:hover,
+	&:active {
+		color: $link_hover_color;
+	}
+}

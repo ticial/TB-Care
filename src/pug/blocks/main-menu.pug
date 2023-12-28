@@ -1,0 +1,24 @@
+-
+	menu_items = [
+		{ title: 'About Us', subitems: ['About RTC', 'About a4i', 'About our partners'] },
+		{ title: 'Knowledge Hub' },
+		{ title: 'Innovators Directory' },
+		{ title: 'Application Portal' },
+		{ title: 'News & Updates' },
+	];
+
+.main-menu
+	.main-menu__header
+		button.menu-button_close CLOSE
+	.main-menu__body
+		ul.main-menu__items
+			each item, index in menu_items
+				li.main-menu__item
+					a.main-menu__link(href="")!=item.title 
+					if item.subitems
+						ul.main-menu__subitems
+							each subitem in item.subitems 
+								li.main-menu__subitem
+									a.main-menu__link(href="")!=subitem 
+		hr.main-menu__hr
+		include social-links

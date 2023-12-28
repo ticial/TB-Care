@@ -1,7 +1,7 @@
 export const ENV_STATUS = {
-	projectDevStatus: process.env.NODE_ENV === 'development',
+	projectDevStatus: process.env.NODE_ENV === 'production',
 	projectWpBuildStatus: process.env.NODE_ENV === 'wp',
-	projectPreviewStatus: process.env.NODE_ENV === 'development',
+	projectPreviewStatus: process.env.NODE_ENV === 'production',
 };
 
 export const phpVars = {

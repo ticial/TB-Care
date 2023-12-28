@@ -3,15 +3,42 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 15;
 
-	height: var(--height-header);
+	// height: var(--height-header);
 	width: 100%;
 
 	font-size: 1rem;
 
-	will-change: transform;
+	// will-change: transform;
 
-	@include z-index(header);
+	// @include z-index(header);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0 20px;
+	height: 76px;
+	background: #fff;
+
+	@include tablet-s {
+		padding: 0 60px;
+		height: 80px;
+	}
+}
+
+.logo {
+	background: url(../images/logo-min.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 212px;
+	height: 36px;
+
+	@include tablet-s {
+		width: 256px;
+		height: 43px;
+	}
 }
 
 //------------------------------------------------------------layout###

@@ -1,0 +1,34 @@
+@mixin menu-button($base-color, $hover-color) {
+	cursor: pointer;
+
+	border: none;
+	background: none;
+
+	padding: 2px 1px;
+
+	font-size: 11px;
+	font-family: 'RobotoCondensed', sans-serif;
+	font-weight: 900;
+	line-height: 13px;
+
+	color: $base-color;
+	border-top: 3px solid $base-color;
+	border-bottom: 3px solid $base-color;
+
+	@include transition_color_border;
+
+	&:hover,
+	&:active {
+		color: $hover-color;
+		border-top: 3px solid $hover-color;
+		border-bottom: 3px solid $hover-color;
+	}
+}
+
+.menu-button_open {
+	@include menu-button($primary_color, $link_hover_color);
+}
+
+.menu-button_close {
+	@include menu-button($white, $link_hover_color);
+}

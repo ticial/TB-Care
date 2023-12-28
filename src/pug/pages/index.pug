@@ -1,9 +1,12 @@
 extends ../layout/layout
 
 block vars
-	//- include ../templates/project-vars
 	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'Index', template_name: 'index'}
 
 block content_block
-	section.section.index_section.demo_mod
-		h1.section_title Hola #[a.test(href='https://glivera-team.com/') Maketodor] :)
+	section.home 
+		.home__bg 
+		.home__panel
+			h1.home__title Re-imagining TB Care
+			p.home__text Vestibulum id ligula porta felis euismod semper maecenas sed diam eget risus varius blandit sit amet non magna nullam id dolor id nibh ultricies.
+			button.home__button PLAY VIDEO 
