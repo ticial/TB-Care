@@ -9,16 +9,16 @@
 
 .main-menu
 	.main-menu__header
-		button.menu-button_close CLOSE
+		button.menu-button_close(type='button', aria-label='close menu') CLOSE
 	.main-menu__body
 		ul.main-menu__items
 			each item, index in menu_items
 				li.main-menu__item
 					a.main-menu__link(href="")!=item.title 
-					if item.subitems
-						ul.main-menu__subitems
-							each subitem in item.subitems 
-								li.main-menu__subitem
-									a.main-menu__link(href="")!=subitem 
+					//- if item.subitems
+					//- 	ul.main-menu__subitems
+					//- 		each subitem in item.subitems 
+					//- 			li.main-menu__subitem
+					//- 				a.main-menu__link(href="")!=subitem 
 		hr.main-menu__hr
 		include social-links

@@ -3,7 +3,6 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 15;
 
 	width: 100%;
 
@@ -17,13 +16,15 @@
 
 	padding: 0 20px;
 	height: 76px;
-	background: #fff;
+	background: $white;
 
 	@include tablet-s {
 		padding: 0 60px;
 		height: 80px;
 	}
 }
+
+//------------------------------------------------------------layout###
 
 .logo {
 	background: url(../images/logo-min.png);
@@ -37,5 +38,3 @@
 		height: 43px;
 	}
 }
-
-//------------------------------------------------------------layout###
