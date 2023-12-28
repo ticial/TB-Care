@@ -2,7 +2,7 @@
 	position: relative;
 	display: flex;
 	align-items: flex-end;
-	height: 720px;
+	height: 72rem;
 }
 
 .home__bg {
@@ -25,49 +25,49 @@
 .home__panel {
 	box-sizing: border-box;
 	width: 100%;
-	padding: 40px 20px;
+	padding: 4rem 2rem;
 
 	opacity: 0.9;
 	background: #ffffff;
 	background-blend-mode: normal;
 
 	@include tablet-s {
-		max-width: 700px;
-		margin: 60px;
-		padding: 60px 50px;
+		max-width: 70rem;
+		margin: 6rem;
+		padding: 6rem 5rem;
 	}
 }
 
 .home__title {
 	color: $primary_color;
 	font-family: $font_1;
-	font-size: 40px;
+	font-size: 4rem;
 	font-weight: 900;
-	line-height: 40px;
+	line-height: 4rem;
 	text-transform: uppercase;
 }
 
 .home__text {
-	margin-top: 10px;
-	font-size: 16px;
+	margin-top: 1rem;
+	font-size: 1.6rem;
 	font-weight: 400;
-	line-height: 24px;
-	letter-spacing: 0.5px;
+	line-height: 2.4rem;
+	letter-spacing: 0.05rem;
 }
 
 .home__button {
 	position: relative;
-	margin-top: 20px;
-	width: 176px;
-	height: 40px;
+	margin-top: 2rem;
+	width: 17.6rem;
+	height: 4rem;
 
 	color: $primary_color;
 	font-family: $font_1;
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 0.1rem;
 
 	@include transition_background;
 }
@@ -80,7 +80,7 @@
 	left: 0;
 	top: 0;
 	padding: 1px;
-	border-radius: 16px;
+	border-radius: 1.6rem;
 	background-size: 200% 100%;
 	background-image: linear-gradient(to right, $color1, $color2, $color1);
 	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);

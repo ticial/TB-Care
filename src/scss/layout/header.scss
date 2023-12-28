@@ -14,13 +14,13 @@
 	justify-content: space-between;
 	align-items: center;
 
-	padding: 0 20px;
-	height: 76px;
+	padding: 0 2rem;
+	height: 7.6rem;
 	background: $white;
 
 	@include tablet-s {
-		padding: 0 60px;
-		height: 80px;
+		padding: 0 6rem;
+		height: 8rem;
 	}
 }
 
@@ -30,11 +30,11 @@
 	background: url(../images/logo-min.png);
 	background-size: contain;
 	background-repeat: no-repeat;
-	width: 212px;
-	height: 36px;
+	width: 21.2rem;
+	height: 3.6rem;
 
 	@include tablet-s {
-		width: 256px;
-		height: 43px;
+		width: 25.6rem;
+		height: 4.3rem;
 	}
 }
