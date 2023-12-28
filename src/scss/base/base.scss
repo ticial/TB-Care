@@ -6,9 +6,7 @@
 //------------------------------------------------------------base styles
 :root {
 	--full-screen: calc(var(--vh, 1vh) * 100);
-
-	// --height-header: 10rem;
-	--height-header: 80px;
+	--height-header: 10rem;
 	--height-footer: 10rem;
 	--gl-indent: 5rem;
 }

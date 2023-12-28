@@ -5,14 +5,11 @@
 	left: 0;
 	z-index: 15;
 
-	// height: var(--height-header);
 	width: 100%;
 
 	font-size: 1rem;
 
-	// will-change: transform;
-
-	// @include z-index(header);
+	@include z-index(header);
 
 	display: flex;
 	justify-content: space-between;
