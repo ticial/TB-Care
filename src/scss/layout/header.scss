@@ -30,13 +30,13 @@
 	}
 }
 
-.logo_link {
+.navbar__brand {
 	&:focus {
 		outline: 1px dotted $link_hover_color;
 	}
 }
 
-.logo {
+.navbar__brand-img {
 	background: url(../images/logo-min.png);
 	background-size: contain;
 	background-repeat: no-repeat;
