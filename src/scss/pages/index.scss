@@ -80,22 +80,25 @@
 	left: 0;
 	top: 0;
 	padding: 1px;
+
 	border-radius: 1.6rem;
 	background-size: 200% 100%;
 	background-image: linear-gradient(to right, $color1, $color2, $color1);
+	background-position-x: -100%;
 	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
 	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
 	-webkit-mask-composite: xor;
 	mask-composite: exclude;
-}
-
-.home__button::before {
-	@include gradient-border(#dff600, #017ee2);
-	background-position-x: -100%;
 
 	transition: background 0.3s ease-in-out;
 }
 
-.home__button:hover::before {
+.home__button::before {
+	@include gradient-border(#dff600, #017ee2);
+}
+
+.home__button:hover::before,
+.home__button:active::before,
+.home__button:focus::before {
 	background-position-x: 0;
 }

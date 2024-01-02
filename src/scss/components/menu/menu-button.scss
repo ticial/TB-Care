@@ -19,6 +19,7 @@
 	@include transition_color_border;
 
 	&:hover,
+	&:focus,
 	&:active {
 		color: $hover-color;
 		border-top: 3px solid $hover-color;

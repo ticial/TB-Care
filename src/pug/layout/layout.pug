@@ -8,12 +8,12 @@ block project_vars
 
 doctype
 html(lang="en" data-template-name= array.template_name)
-	head
-		+head(array)
-	body(class= array.body_class)
-		.preloader
-		include ../blocks/header
-		.wrapper(class= array.layout_mod)
-			block content_block
-			+footer
-		block local_popup
+    head
+        +head(array)
+    body(class= array.body_class)
+        .preloader
+        +header
+        .wrapper(class= array.layout_mod)
+            block content_block
+            +footer
+        block local_popup

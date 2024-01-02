@@ -3,13 +3,23 @@ const header = () => {
 	const menuOpenButton = document.querySelector('.menu-button_open');
 	const menuCloseButton = document.querySelector('.menu-button_close');
 
+	let openCloseTimeout;
+
 	function openMenu(event) {
 		event.stopPropagation();
-		if (!mainMenu.classList.contains('main-menu_open')) mainMenu.classList.add('main-menu_open');
+		if (!mainMenu.classList.contains('main-menu_open')) {
+			clearTimeout(openCloseTimeout);
+			mainMenu.classList.remove('main-menu_close');
+			openCloseTimeout = setTimeout(() => mainMenu.classList.add('main-menu_open'), 0);
+		}
 	}
 
 	function closeMenu() {
-		if (mainMenu.classList.contains('main-menu_open')) mainMenu.classList.remove('main-menu_open');
+		if (mainMenu.classList.contains('main-menu_open')) {
+			clearTimeout(openCloseTimeout);
+			mainMenu.classList.remove('main-menu_open');
+			openCloseTimeout = setTimeout(() => mainMenu.classList.add('main-menu_close'), 1000);
+		}
 	}
 
 	document.addEventListener('keydown', (event) => {

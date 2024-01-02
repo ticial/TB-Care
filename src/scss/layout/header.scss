@@ -9,6 +9,12 @@
 	font-size: 1rem;
 
 	@include z-index(header);
+}
+
+//------------------------------------------------------------layout###
+
+.navbar {
+	width: 100%;
 
 	display: flex;
 	justify-content: space-between;
@@ -24,7 +30,11 @@
 	}
 }
 
-//------------------------------------------------------------layout###
+.logo_link {
+	&:focus {
+		outline: 1px dotted $link_hover_color;
+	}
+}
 
 .logo {
 	background: url(../images/logo-min.png);

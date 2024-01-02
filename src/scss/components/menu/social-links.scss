@@ -9,6 +9,7 @@
 	@include transition_color;
 
 	&:hover,
+	&:focus,
 	&:active {
 		color: $link_hover_color;
 	}

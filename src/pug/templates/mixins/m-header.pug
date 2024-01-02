@@ -1,3 +1,9 @@
+//- mixin header
+//-     header.header
 mixin header
     header.header
-
+        nav.navbar
+            a.logo_link(href="")
+                .logo 
+            button.menu-button_open(type='button', aria-label='open menu') menu
+            include ../../blocks/main-menu

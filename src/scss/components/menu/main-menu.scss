@@ -16,6 +16,10 @@
 	&_open {
 		transform: translate(0);
 	}
+
+	&_close {
+		display: none;
+	}
 }
 
 .main-menu__header {
@@ -77,6 +81,7 @@
 	@include transition_color;
 
 	&:hover,
+	&:focus,
 	&:active {
 		text-decoration: none;
 		color: $link_hover_color;
