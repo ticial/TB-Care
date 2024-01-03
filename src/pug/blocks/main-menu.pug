@@ -1,24 +1,45 @@
 -
-	menu_items = [
-		{ title: 'About Us', subitems: ['About RTC', 'About a4i', 'About our partners'] },
-		{ title: 'Knowledge Hub' },
-		{ title: 'Innovators Directory' },
-		{ title: 'Application Portal' },
-		{ title: 'News & Updates' },
-	];
+    menu_items = [
+        { title: 'About Us', subitems: ['About RTC', 'About a4i', 'About our partners'] },
+        { title: 'Knowledge Hub' },
+        { title: 'Innovators Directory' },
+        { title: 'Application Portal' },
+        { title: 'News & Updates' },
+    ];
+
+    social = {
+        items: [
+            {
+                mod_link: 'instagram',
+                label: 'instagram',
+                name_icon: 'instagram', 
+                mod_icon: 'instagram',
+            },
+            {
+                mod_link: 'facebook',
+                label: 'facebook',
+                name_icon: 'facebook', 
+                mod_icon: 'facebook',
+            },
+            {
+                mod_link: 'twitter',
+                label: 'twitter',
+                name_icon: 'twitter', 
+                mod_icon: 'twitter',
+            },
+        ]
+    }
 
 .main-menu.main-menu_close
-	.main-menu__header
-		button.menu-button_close(type='button', aria-label='close menu') close
-	.main-menu__body
-		ul.main-menu__items
-			each item, index in menu_items
-				li.main-menu__item
-					a.main-menu__link(href="")!=item.title 
-					//- if item.subitems
-					//- 	ul.main-menu__subitems
-					//- 		each subitem in item.subitems 
-					//- 			li.main-menu__subitem
-					//- 				a.main-menu__link(href="")!=subitem 
-		hr.main-menu__hr
-		include social-links
+    .main-menu__wrapper
+        ul.main-menu__items
+            each item, index in menu_items
+                li.main-menu__item
+                    a.main-menu__link(href="#")!=item.title 
+                    //- if item.subitems
+                    //- 	ul.main-menu__subitems
+                    //- 		each subitem in item.subitems 
+                    //- 			li.main-menu__subitem
+                    //- 				a.main-menu__link(href="#")!=subitem 
+        +social(social)
+        //- include social-links

@@ -1,20 +1,24 @@
-@mixin menu-button($base-color, $hover-color) {
+.menu-button {
 	cursor: pointer;
 
 	border: none;
 	background: none;
 
 	padding: 2px 1px 1px;
+	z-index: 200;
 
 	font-size: 11px;
-	font-family: $font_1;
 	font-weight: 900;
 	line-height: 1.4rem;
+	letter-spacing: -0.06rem;
 	text-transform: uppercase;
+}
 
+@mixin menu-button-mixin($base-color, $hover-color) {
 	color: $base-color;
-	border-top: 3px solid $base-color;
-	border-bottom: 3px solid $base-color;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	border-color: $base-color;
 
 	@include transition_color_border;
 
@@ -22,15 +26,16 @@
 	&:focus,
 	&:active {
 		color: $hover-color;
-		border-top: 3px solid $hover-color;
-		border-bottom: 3px solid $hover-color;
+		border-top: 3px solid;
+		border-bottom: 3px solid;
+		border-color: $hover-color;
 	}
 }
 
 .menu-button_open {
-	@include menu-button($primary_color, $link_hover_color);
+	@include menu-button-mixin($primary_color, $link_hover_color);
 }
 
 .menu-button_close {
-	@include menu-button($white, $link_hover_color);
+	@include menu-button-mixin($white, $link_hover_color);
 }

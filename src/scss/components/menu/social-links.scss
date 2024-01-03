@@ -1,9 +1,9 @@
-.social-links {
+.social_list {
 	display: flex;
 	gap: 2rem;
 }
 
-.social-link {
+.social_link {
 	color: $white;
 
 	@include transition_color;
@@ -13,4 +13,9 @@
 	&:active {
 		color: $link_hover_color;
 	}
+}
+
+.social_link > .icon {
+	width: 3rem;
+	height: 3rem;
 }
