@@ -26,8 +26,6 @@
 	&:focus,
 	&:active {
 		color: $hover-color;
-		border-top: 3px solid;
-		border-bottom: 3px solid;
 		border-color: $hover-color;
 	}
 }
